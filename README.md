@@ -11,3 +11,9 @@ Following the canonical form of the WAVE file format, the information is extract
 SOURCE: http://soundfile.sapp.org/doc/WaveFormat/
 
 The parameters are retrieved in string format.
+
+_______________________________________________
+
+Debido a que algunas librerías de audio para Python presentan ciertos problemas al utilizar archivos de 24 bits (SciPy) o de frecuencias de sampleo mayores a 48 kHz (WAVE), se presenta esta sencilla clase de Python para obtener los parámetros número de canales, frecuencia de sampleo y profundidad de bits de cualquier archivo .wav.
+ 
+Siguiendo la forma canónica de representación de archivos con formato WAVE, se extrae la información de los primeros 36 bytes del archivo (específicamente, desde el byte 12 al 36). Estos bytes corresponden al subconjunto FMT, que describe los parámetros que se extraen de esta clase (número de canales, frecuencia de sampleo y profundidad de bits). 
