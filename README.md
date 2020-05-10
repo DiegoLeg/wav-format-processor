@@ -4,7 +4,7 @@ As some Python audio libraries present some issues working with 24-bit audio fil
 
 Following the canonical form of the WAVE file format, the information is extracted from the first 36 bytes (more specifically, from the bytes 12 to 36) of the total file. Bytes from 12 to 36 correspond to the FMT subchunk, describing the parameters retrieved in this class (number of channels, sampling frequency and bit-depth).
 
-http://soundfile.sapp.org/doc/WaveFormat/xwav-sound-format.gif.pagespeed.ic.tIS-Bqb8Y1.png
+![alt text](http://soundfile.sapp.org/doc/WaveFormat/xwav-sound-format.gif.pagespeed.ic.tIS-Bqb8Y1.png)
 
 SOURCE: http://soundfile.sapp.org/doc/WaveFormat/
 
