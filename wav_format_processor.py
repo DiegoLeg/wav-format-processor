@@ -6,6 +6,16 @@ import struct
 class WavFormatProcessor():
     
     def wav_file_properties(self, filename):
+        """Obtengo los parametros mas importantes de un archivo .wav.
+        
+        Parameters:
+        filename: nombre del archivo a analizar
+        
+        Return:
+        number_channels: Numero de canales
+        sample_rate: Frecuencia de sampleo
+        bit_depth: Profundiad de bits
+        """
 
         wave_file = open(filename, "rb")
         
